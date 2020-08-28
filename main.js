@@ -1,14 +1,26 @@
 "use strict"
-
 function renderCoffee(coffee) {
-    var html = '<tr class="coffee">';
-    // html += '<td>' + coffee.id + '</td>';
-    html += '<td>' + coffee.name + '</td>';
-    html += '<td>' + coffee.roast + '</td>';
-    html += '</tr>';
+    var html = '<div class="coffee">';
+    // html += '<h1>' + coffee.id + '</h1>';
+    html += '<h3>' + coffee.name + '</h3>';
+    html += '<p>' + coffee.roast + '</p>';
+    html += '</div>';
 
     return html;
 }
+function searchBar() {
+    let input = document.getElementById('search');
+    let filter = input.value.toUpperCase();
+    let div = document.getElementsByClassName('coffee');
+    let h3 = document.getElementsByTagName('h3');
+
+    for(let i = 0; i < div.length; i++){
+
+    }
+}
+
+
+
 
 function renderCoffees(coffees) {
     var html = '';
@@ -30,17 +42,17 @@ function updateCoffees(e) {
     tbody.innerHTML = renderCoffees(filteredCoffees);
 }
 
-function searchBar(searchBar) {
-    // e.preventDefault(); // don't submit the form, we just want to update the data
-    var searchInput = searchBar.value; //input
-    var filteredCoffees = [];
-    coffees.forEach(function (coffee) {
-        if (coffee.name.includes('')) {
-            filteredCoffees.push(coffee);
-        }
-    });
-    tbody.innerHTML = renderCoffees(filteredCoffees)
-}
+// function searchBar(searchBar) {
+//     // e.preventDefault(); // don't submit the form, we just want to update the data
+//     var searchInput = searchBar.value; //input
+//     var filteredCoffees = [];
+//     coffees.forEach(function (coffee) {
+//         if (coffee.name.includes('')) {
+//             filteredCoffees.push(coffee);
+//         }
+//     });
+//     tbody.innerHTML = renderCoffees(filteredCoffees)
+// }
 
 
 
@@ -67,7 +79,7 @@ var coffees = [
 var tbody = document.querySelector('#coffees');
 var submitButton = document.querySelector('#submit');
 var roastSelection = document.querySelector('#roast-selection');
-var searchBar = document.querySelector('#search');
+var search = document.querySelector('#search');
 
 tbody.innerHTML = renderCoffees(coffees);
 
