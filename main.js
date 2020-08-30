@@ -17,18 +17,21 @@ var coffees = [
     {id: 13, name: 'Italian', roast: 'dark', all: 'all'},
     {id: 14, name: 'French', roast: 'dark', all: 'all'},
 ];
-
+//Coffee search declarations
 var tbody = document.querySelector('#coffees');
 var submitButton = document.querySelector('#submit');
 var roastSelection = document.querySelector('#roast-selection');
 var search = document.querySelector('#search');
 var all = document.querySelector('#roast-selection');
 
+//Create Coffee Declarations
 var addingCoffee = document.querySelector('#addCoffee');
+var addingRoast = document.querySelector('#addRoast-Selection')
+var addSubmit = document.querySelector('#submit2');
 
 tbody.innerHTML = renderCoffees(coffees);
 
-
+//HTML tags around object
 function renderCoffee(coffee) {
     var html = '<div class="coffee">';
     // html += '<h1>' + coffee.id + '</h1>';
@@ -38,6 +41,8 @@ function renderCoffee(coffee) {
 
     return html;
 }
+
+//Loops thru list to wrap HTML tags
 function renderCoffees(coffees) {
     var html = '';
     for(var i = coffees.length - 1; i >= 0; i--) {
@@ -46,7 +51,7 @@ function renderCoffees(coffees) {
     return html; // filters the list
 }
 
-//Coffee Search
+//Coffee Search Function
 function updateCoffees() {
     //e.preventDefault(); // don't submit the form, we just want to update the data
     var selectedCoffee = search.value;
@@ -65,17 +70,29 @@ function updateCoffees() {
     tbody.innerHTML = renderCoffees(filteredCoffees);
 }
 
-//Add Coffee
-var addCoffee = addNewCoffee(coffee,roast,) {
-
+//Function for Adding Coffee
+function createCoffee (inputNewCoffee, inputRoast) {
+    var addingCoffeeName = addingCoffee.value;
+    var roastAdd = addingRoast.value;
+    var addButton = addSubmit.value;
+    var newCoffee = {id: coffees.length + 1, name: addingCoffeeName, roast: roastAdd, all: 'all'};
+    coffees.push(newCoffee);
+    console.log(newCoffee);
 }
-
+console.log(coffees)
 
 //Event Handlers
 submitButton.addEventListener('click', function(e) {
     e.preventDefault()
     updateCoffees();
 });
-search.addEventListener("keyup", function(){
-    updateCoffees(search.value);
-})
+
+search.addEventListener('keyup', function(){
+    updateCoffees();
+});
+
+addSubmit.addEventListener('click' ,function(e) {
+    e.preventDefault()
+    createCoffee();
+    updateCoffees();
+});
