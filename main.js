@@ -63,7 +63,7 @@ function updateCoffees() {
         if (coffee.all == selectedAll && coffee.name.toLowerCase().includes(selectedCoffee.toLowerCase())) {
             filteredCoffees.push(coffee)
         }
-        if (coffee.roast === selectedRoast && coffee.name.toLowerCase().includes(selectedCoffee.toLowerCase())) {
+        else if (coffee.roast === selectedRoast && coffee.name.toLowerCase().includes(selectedCoffee.toLowerCase())) {
             filteredCoffees.push(coffee);
         }
     });
@@ -75,11 +75,16 @@ function createCoffee (inputNewCoffee, inputRoast) {
     var addingCoffeeName = addingCoffee.value;
     var roastAdd = addingRoast.value;
     var addButton = addSubmit.value;
-    var newCoffee = {id: coffees.length + 1, name: addingCoffeeName, roast: roastAdd, all: 'all'};
-    coffees.push(newCoffee);
-    console.log(newCoffee);
+
+    var addCoffee = {id: coffees.length + 1, name: addingCoffeeName, roast: roastAdd, all: 'all'};
+    if (addingCoffeeName === "") {
+        updateCoffees();
+    }
+    else {
+        coffees.push(addCoffee);
+    }
 }
-console.log(coffees)
+
 
 //Event Handlers
 submitButton.addEventListener('click', function(e) {
