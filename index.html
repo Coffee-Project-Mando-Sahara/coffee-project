@@ -22,9 +22,9 @@
 </div>
 
 <!----------------------- Search and Add Coffee ----------------------->
-<div class="container2 d-flex justify-content-space-between">
+<div class="container2 d-flex justify-content-space-between m-0 pt-5">
     <form class="col-6">
-        <h1>Coffee Selection</h1>
+        <h2>Coffee Selection</h2>
         <input id="search" name="search" type="search" autocomplete="off" placeholder="Enter Coffee here..">
         <select id="roast-selection">
             <option>all</option>
@@ -32,24 +32,24 @@
             <option>medium</option>
             <option>dark</option>
         </select>
-        <input id="submit" type="submit"/>
+        <button id="submit" type="button" class="btn btn-outline-warning">Search</button>
     </form>
     <form class="col-6">
-        <h1>Add Coffee</h1>
+        <h2>Add Coffee</h2>
         <input id="addCoffee" name="addCoffee" type="text" autocomplete="off" placeholder="Enter Your Custom Coffee here...">
         <select id="addRoast-Selection">
             <option>light</option>
             <option>medium</option>
             <option>dark</option>
         </select>
-        <input id="submit2" type="submit"/>
+        <button id="submit2" type="button" class="btn btn-outline-warning">Add Coffee</button>
     </form>
 </div>
 
 <!------------------- Coffees List rendered in JS ------------------------>
 
 <div class="">
-    <section id="coffees" class="d-flex justify-content-center align-items-center flex-wrap px-0  col-12"></section>
+    <section id="coffees" class="d-flex justify-content-center align-items-center flex-wrap px-0 pt-3  col-12"></section>
 </div>
 
 
