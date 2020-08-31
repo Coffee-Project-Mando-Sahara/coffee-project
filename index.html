@@ -7,17 +7,23 @@
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
           integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&family=Pattaya&family=Permanent+Marker&display=swap" rel="stylesheet">
 </head>
 <body>
 
-<div class="d-flex">
+<!------------------ Jumbotron --------------------------->
+<div class="jumbotron jumbotron-fluid">
+    <div class="container">
+        <h1 class="display-4">Tropical Mars</h1>
+        <p class="lead">Out of this world coffee! Straight from the tropical forests of Mars!! </p>
+    </div>
+</div>
+
+<!----------------------- Search and Add Coffee ----------------------->
+<div class="d-flex justify-content-space-between">
     <form class="col-6">
-        <h1>Coffee!</h1>
-        <label for="search">Search</label>
-        <input id="search" name="search" type="search" autocomplete="off">
-
-
-        <label for="roast-selection"></label>
+        <h1>Coffee Selection</h1>
+        <input id="search" name="search" type="search" autocomplete="off" placeholder="Enter Coffee here..">
         <select id="roast-selection">
             <option>all</option>
             <option>light</option>
@@ -28,10 +34,7 @@
     </form>
     <form class="col-6">
         <h1>Add Coffee</h1>
-        <label for="addCoffee">Add Coffee</label>
-        <input id="addCoffee" name="addCoffee" type="text" autocomplete="off">
-
-        <label for="roast-selection"></label>
+        <input id="addCoffee" name="addCoffee" type="text" autocomplete="off" placeholder="Enter Your Custom Coffee here...">
         <select id="addRoast-Selection">
             <option>light</option>
             <option>medium</option>
@@ -41,8 +44,13 @@
     </form>
 </div>
 
+<!------------------- Coffees List rendered in JS ------------------------>
+<div class="container">
+<div class="row">
+    <section id="coffees" class="d-flex justify-content-center align-items-center flex-wrap m-5"></section>
+</div>
+</div>
 
-<section id="coffees" class="mx-5"></section>
 
 <script src="main.js"></script>
 

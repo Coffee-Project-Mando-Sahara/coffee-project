@@ -1,12 +1,15 @@
 h1 {
     color: green;
-    font-family: "Comic Sans MS", SansSerif, "Times New Roman";
+    font-family: 'Pattaya', sans-serif;
+    text-align: center;
 }
 
 
 h3 {
     color: saddlebrown;
-    font-style: italic;;
+    font-style: italic;
+    display: flex;
+    justify-content: center;
 }
 
 p.light {
@@ -20,4 +23,20 @@ p.medium {
 
 p.dark{
     color: gray;
+}
+
+p {
+    display: flex;
+    justify-content: center;
+}
+
+div.coffee {
+    /*display: flex;*/
+    /*!*justify-content: center;*!*/
+    /*justify-content: space-between;*/
+    margin: 1rem;
+}
+
+.col-6 {
+    text-align: center;
 }
