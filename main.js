@@ -90,7 +90,8 @@ function createCoffee(inputNewCoffee, inputRoast) {
     var addButton = addSubmit.value;
 
     var addCoffee = {id: coffees.length + 1, name: addingCoffeeName, roast: roastAdd, all: 'all'};
-    if (addingCoffeeName === "") {
+
+    if (addingCoffeeName === "" || roastAdd === "Select Roast") {
         updateCoffees();
     } else {
         coffees.push(addCoffee);

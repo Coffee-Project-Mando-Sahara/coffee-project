@@ -71,3 +71,21 @@ html, section, div.container2 {
     background: url("https://cnet2.cbsistatic.com/img/UnvRWfYgyTGEDS7uM-lORNK8HY4=/1200x675/2020/07/13/7cd1f685-8400-4af6-af51-b2e0d56a1bf2/marscaltech1.jpg") no-repeat center center/cover;
 }
 
+select {
+    width: 130px;
+    height: 30px;
+    border: 1px orange solid;
+    background: none;
+    color: brown;
+    border-radius: 5px;
+    padding: 4px;
+
+}
+
+input {
+    background: lightgrey;
+    border: 2px black solid;
+    border-radius: 5px;
+
+}
+
