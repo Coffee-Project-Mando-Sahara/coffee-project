@@ -34,20 +34,20 @@ tbody.innerHTML = renderCoffees(coffees);
 
 //HTML tags around object
 function renderCoffee(coffee) {
-    var html = '<div class="coffee col-sm-2 col-md-3 col-lg-4">';
+    var html = '<div class="coffee col-4">';
 
-    html += '<h3 class="col-sm-2 col-md-3 col-lg-4">' + coffee.name + '</h3>';
+    html += '<h3 class="col-4">' + coffee.name + '</h3>';
 
     if(coffee.roast === "light"){
-      html += '<p class="light col-sm-2 col-md-3 col-lg-4">' + coffee.roast + '</p>';
+      html += '<p class="light col-4">' + coffee.roast + '</p>';
         console.log("Light: ")
     }
     else if(coffee.roast === "medium"){
-      html += '<p class="medium col-sm-2 col-md-3 col-lg-4">' + coffee.roast + '</p>';
+      html += '<p class="medium col-4">' + coffee.roast + '</p>';
         console.log("Medium: ")
     }
     else{
-      html += '<p class="dark col-sm-2 col-md-3 col-lg-4">' + coffee.roast + '</p>';
+      html += '<p class="dark col-4">' + coffee.roast + '</p>';
       console.log("Dark: ")
     }
 
