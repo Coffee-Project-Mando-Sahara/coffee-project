@@ -45,7 +45,7 @@ function renderCoffee(coffee) {
 //Loops thru list to wrap HTML tags
 function renderCoffees(coffees) {
     var html = '';
-    for(var i = coffees.length - 1; i >= 0; i--) {
+    for(var i = 0; i <= coffees.length - 1; i++) {
         html += renderCoffee(coffees[i]);
     }
     return html; // filters the list
@@ -60,7 +60,7 @@ function updateCoffees() {
     var filteredCoffees = [];
 
     coffees.forEach(function(coffee) {
-        if (coffee.all == selectedAll && coffee.name.toLowerCase().includes(selectedCoffee.toLowerCase())) {
+        if (coffee.all === selectedAll && coffee.name.toLowerCase().includes(selectedCoffee.toLowerCase())) {
             filteredCoffees.push(coffee)
         }
         else if (coffee.roast === selectedRoast && coffee.name.toLowerCase().includes(selectedCoffee.toLowerCase())) {
@@ -84,7 +84,6 @@ function createCoffee (inputNewCoffee, inputRoast) {
         coffees.push(addCoffee);
     }
 }
-
 
 //Event Handlers
 submitButton.addEventListener('click', function(e) {
