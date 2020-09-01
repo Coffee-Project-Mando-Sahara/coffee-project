@@ -113,3 +113,7 @@ addSubmit.addEventListener('click', function (e) {
     createCoffee();
     updateCoffees();
 });
+
+roastSelection.addEventListener('change', function (){
+    updateCoffees();
+});
