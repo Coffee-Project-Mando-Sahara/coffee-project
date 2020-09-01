@@ -20,7 +20,7 @@ var coffees = [
     {id: 15, name: 'Grenade', roast: 'dark', all: 'all'},
     {id: 16, name: 'Beyond Black', roast: 'dark', all: 'all'},
     {id: 17, name: 'Dos Veteranos', roast: 'dark', all: 'all'},
-    {id: 18, name: 'DECAFE-214 Taste of Freedom', roast: 'dark', all: 'all'},
+    {id: 18, name: 'Double Decafe-214, Taste of Freedom', roast: 'dark', all: 'all'},
 
 ];
 //Coffee search declarations
