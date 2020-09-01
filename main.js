@@ -38,15 +38,12 @@ function renderCoffee(coffee) {
     html += '<h3>' + coffee.name + '</h3>';
     if(coffee.roast === "light"){
       html += '<p class="light ">' + coffee.roast + '</p>';
-        console.log("Light: ")
     }
     else if(coffee.roast === "medium"){
       html += '<p class="medium">' + coffee.roast + '</p>';
-        console.log("Medium: ")
     }
     else{
       html += '<p class="dark">' + coffee.roast + '</p>';
-      console.log("Dark: ")
     }
 
     html += '</div>';
@@ -85,7 +82,7 @@ function updateCoffees() {
 function createCoffee(inputNewCoffee, inputRoast) {
     var addingCoffeeName = addingCoffee.value;
     var roastAdd = addingRoast.value;
-    var addButton = addSubmit.value;
+
 
     var addCoffee = {id: coffees.length + 1, name: addingCoffeeName, roast: roastAdd, all: 'all'};
 
