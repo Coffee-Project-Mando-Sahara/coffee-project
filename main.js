@@ -37,7 +37,6 @@ function renderCoffee(coffee) {
     var html = '<div class="coffee col-sm-2 col-md-2 col-lg-2">';
 
     html += '<h3 class="">' + coffee.name + '</h3>';
-
     if(coffee.roast === "light"){
       html += '<p class="light ">' + coffee.roast + '</p>';
         console.log("Light: ")

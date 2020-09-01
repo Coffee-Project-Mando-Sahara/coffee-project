@@ -5,6 +5,7 @@ h1 {
     font-family: 'Pattaya', sans-serif;
     text-align: center;
     text-shadow: 3px 3px black;
+
 }
 
 h2 {
@@ -56,9 +57,9 @@ div.container {
     /*background-color: clear;*/
 }
 
-html, section, div.container2 {
-    background-color: #292D3F;
-}
+/*html, section, div.container2 {*/
+/*    background-color: #292D3F;*/
+/*}*/
 
 .lead {
     color: navajowhite;
@@ -69,6 +70,7 @@ html, section, div.container2 {
 
 .jumbotron {
     background: url("https://cnet2.cbsistatic.com/img/UnvRWfYgyTGEDS7uM-lORNK8HY4=/1200x675/2020/07/13/7cd1f685-8400-4af6-af51-b2e0d56a1bf2/marscaltech1.jpg") no-repeat center center/cover;
+    height: 30vh;
 }
 
 select {
@@ -91,5 +93,10 @@ input {
 
 input:focus{
     outline-color: orange;
+}
+
+.large-container {
+    background: url('img/bg-img.jpg') repeat center center/cover;
+    height: 75vh;
 }
 
