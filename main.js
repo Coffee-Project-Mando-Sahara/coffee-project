@@ -23,7 +23,7 @@ var coffees = [
     {id: 18, name: 'Double Decafe-214, Taste of Freedom', roast: 'dark', all: 'all'},
 
 ];
-//Coffee search declarations
+//Coffee Search declarations
 var tbody = document.querySelector('#coffees');
 var submitButton = document.querySelector('#submit');
 var roastSelection = document.querySelector('#roast-selection');
