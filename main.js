@@ -3,20 +3,25 @@
 // from http://www.ncausa.org/About-Coffee/Coffee-Roasts-Guide
 
 var coffees = [
-    {id: 1, name: 'Light City', roast: 'light', all: 'all'},
-    {id: 2, name: 'Half City', roast: 'light', all: 'all'},
-    {id: 3, name: 'Cinnamon', roast: 'light', all: 'all'},
-    {id: 4, name: 'City', roast: 'medium', all: 'all'},
-    {id: 5, name: 'American', roast: 'medium', all: 'all'},
-    {id: 6, name: 'Breakfast', roast: 'medium', all: 'all'},
-    {id: 7, name: 'High', roast: 'dark', all: 'all'},
-    {id: 8, name: 'Continental', roast: 'dark', all: 'all'},
-    {id: 9, name: 'New Orleans', roast: 'dark', all: 'all'},
-    {id: 10, name: 'European', roast: 'dark', all: 'all'},
-    {id: 11, name: 'Espresso', roast: 'dark', all: 'all'},
-    {id: 12, name: 'Viennese', roast: 'dark', all: 'all'},
-    {id: 13, name: 'Italian', roast: 'dark', all: 'all'},
-    {id: 14, name: 'French', roast: 'dark', all: 'all'},
+    {id: 1, name: 'Space House Blend', roast: 'light', all: 'all'},
+    {id: 2, name: 'Blue Falcon', roast: 'light', all: 'all'},
+    {id: 3, name: '24k Magic', roast: 'light', all: 'all'},
+    {id: 4, name: 'Alpa C.', roast: 'light', all: 'all'},
+    {id: 5, name: 'Mars Treasure', roast: 'light', all: 'all'},
+    {id: 6, name: "Musk's Favorite", roast: 'light', all: 'all'},
+    {id: 7, name: 'Red Octane', roast: 'medium', all: 'all'},
+    {id: 8, name: 'Wake Up Hop!', roast: 'medium', all: 'all'},
+    {id: 9, name: 'Speedman Special', roast: 'medium', all: 'all'},
+    {id: 10, name: 'Gorilla', roast: 'medium', all: 'all'},
+    {id: 11, name: 'GI Joe', roast: 'medium', all: 'all'},
+    {id: 12, name: 'Java Jarhead', roast: 'medium', all: 'all'},
+    {id: 13, name: 'Lazarus Delight', roast: 'dark', all: 'all'},
+    {id: 14, name: 'Shipmate', roast: 'dark', all: 'all'},
+    {id: 15, name: 'Grenade', roast: 'dark', all: 'all'},
+    {id: 16, name: 'Beyond Black', roast: 'dark', all: 'all'},
+    {id: 17, name: 'Dos Veteranos', roast: 'dark', all: 'all'},
+    {id: 18, name: 'DECAFE-214 Taste of Freedom', roast: 'dark', all: 'all'},
+
 ];
 //Coffee search declarations
 var tbody = document.querySelector('#coffees');
